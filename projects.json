@@ -3,19 +3,34 @@
       "id" : 1,
       "title": "Poke City",
       "description": "Poke City is a desktop website for a poke shop. It is not responsive. This project allowed me to familiarize myself with UX Design and the GSAP library.",
+<<<<<<< HEAD
       "imageUrl": "/portfolio_2024/assets/img/slider/Poke City.webp"
+=======
+      "imageUrl": "/Portfolio_2024
+/assets/img/slider/Poke City.webp"
+>>>>>>> 75e1beccf999e162c8ceb6b1c4d7ffb8eed4ab7b
     },
     {
       "id" : 2,
       "title": "Booki",
       "description": "Booki is a bed and breakfast reservation website in Marseille. This project allowed me to implement a responsive design suitable for all media.",
+<<<<<<< HEAD
       "imageUrl": "/portfolio_2024/assets/img/slider/Booki.webp"
+=======
+      "imageUrl": "/Portfolio_2024
+/assets/img/slider/Booki.webp"
+>>>>>>> 75e1beccf999e162c8ceb6b1c4d7ffb8eed4ab7b
     },
     {
       "id" : 3,
       "title": "Nina Carducci",
       "description": "Nina Carducci is a freelance photographer. Her website was poorly indexed and needed performance optimization, better SEO, and accessibility improvements. So, I used my skills to meet her needs.",
+<<<<<<< HEAD
       "imageUrl": "/portfolio_2024/assets/img/slider/nina_Carducci.webp"
+=======
+      "imageUrl": "/Portfolio_2024
+/assets/img/slider/nina_Carducci.webp"
+>>>>>>> 75e1beccf999e162c8ceb6b1c4d7ffb8eed4ab7b
     }
 ]
   
