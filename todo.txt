@@ -1,0 +1,31 @@
+/**
+
+Nombre de polices ?? 
+- max 2 « polices » et autour de max 5 « déclinaisons » en tout
+
+.class{
+    taille (width, height)
+    margin, padding
+    display (grid, flex, block, align-items, ...)
+    position (absolute, relative, top, bottom, ...)
+
+    font-size, font-weight, letter-spacing, line-height, font-family, ...)
+    color, background, etc...
+    transform, animations
+    
+    « exotique » (z-index, object-fit, list-style, etc...
+}
+
+Informations : 
+- Vérifier la bonne structure du code (pour le bon fonctionnement)
+- Vérifier l'indentation (pour la lisibilité)
+- De préférence, utiliser et compiler du SASS
+- Si pas possible et uniquement du CSS, => minify sur internet, via webpack, etc.. 
+- Nom des classes : Avoir des noms plus précis (par exemple BEM/SMACCS) parce que .titles => ??? 
+- Utiliser l'encapsulation (éviter les bugs)
+    => .section__title => tous les section__title de PARTOUT 
+    => .section__header .section__title => UNIQUEMENT les section__title dans des section__header
+
+
+
+**/
