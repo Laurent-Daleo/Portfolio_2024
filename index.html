@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="./assets/js/project.js" defer></script>
+    <script src="./assets/js//regex.js" defer></script>
     <script src="./assets/js//copyright.js" defer></script>
 
 
@@ -177,23 +178,24 @@
             </div>
         </div>
         <div class="contact-form-content">
-            <form class="contact-form" action="votre_script_de_traitement.php" method="POST">
+            <form class="contact-form">
                 <div class="input_icons">
                     <i class="fa-solid fa-user fa-lg" style="color: #00ff00;"></i>
-                    <input class="contact_input" type="text" id="name" name="name" placeholder="Name" required>
+                    <input class="contact_input" type="text" id="name" name="name" placeholder="Name">
                 </div>
                 <div class="input_icons">
                     <i class="fa-regular fa-envelope fa-lg" style="color: #00ff00;"></i>
-                    <input class="contact_input" type="email" id="email" name="email" placeholder="Email" required>
+                    <input class="contact_input" type="email" id="email" name="email" placeholder="Email">
                 </div>
                 <div class="input_icons">
                     <i class="fa-solid fa-mobile-screen-button fa-lg" style="color: #00ff00;">
 
                     </i>
-                    <input class="contact_input" type="text" id="subject" name="subject" placeholder="Phone" required>
+                    <input class="contact_input" type="tel" id="phone" name="phone" placeholder="Phone">
                 </div>
-                <textarea class="contact_message" id="message" name="message" rows="5" placeholder="Message"
-                    required></textarea>
+                <textarea class="contact_message" id="message" name="message" rows="5" placeholder="Message">
+                </textarea>
+                <p id="error_message"></p>
                 <button class="contact_button" type="submit">Submit</button>
             </form>
         </div>
