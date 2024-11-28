@@ -6,8 +6,7 @@
 <<<<<<< HEAD
       "imageUrl": "/portfolio_2024/assets/img/slider/Poke City.webp"
 =======
-      "imageUrl": "/Portfolio_2024
-/assets/img/slider/Poke City.webp"
+      "imageUrl": "assets/img/slider/Poke City.webp"
 >>>>>>> 75e1beccf999e162c8ceb6b1c4d7ffb8eed4ab7b
     },
     {
@@ -15,10 +14,9 @@
       "title": "Booki",
       "description": "Booki is a bed and breakfast reservation website in Marseille. This project allowed me to implement a responsive design suitable for all media.",
 <<<<<<< HEAD
-      "imageUrl": "/portfolio_2024/assets/img/slider/Booki.webp"
+      "imageUrl": "assets/img/slider/Booki.webp"
 =======
-      "imageUrl": "/Portfolio_2024
-/assets/img/slider/Booki.webp"
+      "imageUrl": "assets/img/slider/Booki.webp"
 >>>>>>> 75e1beccf999e162c8ceb6b1c4d7ffb8eed4ab7b
     },
     {
@@ -28,8 +26,7 @@
 <<<<<<< HEAD
       "imageUrl": "/portfolio_2024/assets/img/slider/nina_Carducci.webp"
 =======
-      "imageUrl": "/Portfolio_2024
-/assets/img/slider/nina_Carducci.webp"
+      "imageUrl": "assets/img/slider/nina_Carducci.webp"
 >>>>>>> 75e1beccf999e162c8ceb6b1c4d7ffb8eed4ab7b
     }
 ]
