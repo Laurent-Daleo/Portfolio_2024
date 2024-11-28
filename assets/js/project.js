@@ -17,7 +17,7 @@ function displayProject(index) {
 }
 
 // Charger les données JSON
-fetch('/projects.json')
+fetch('../projects.json')
     .then(response => response.json())
     .then(data => {
         projects = data;
