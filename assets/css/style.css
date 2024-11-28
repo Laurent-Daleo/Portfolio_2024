@@ -476,7 +476,7 @@ body {
 
 #message {
     width: 450px;
-    height: 150px;
+    height: 200px;
     background-color: var(--primary-color);
     border: none;
     border-bottom: 2px solid var(--secondary-color);
