@@ -9,11 +9,11 @@ Nombre de polices ??
     display (grid, flex, block, align-items, ...)
     position (absolute, relative, top, bottom, ...)
 
-    font-size, font-weight, letter-spacing, line-height, font-family, ...)
+    font-size, font-weight, letter-spacing, line-height, font-family, ...
     color, background, etc...
     transform, animations
     
-    « exotique » (z-index, object-fit, list-style, etc...
+    « exotique » (z-index, object-fit, list-style, etc...)
 }
 
 Informations : 

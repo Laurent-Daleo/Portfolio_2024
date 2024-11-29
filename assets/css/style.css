@@ -93,6 +93,46 @@ body {
     overflow: hidden;
 }
 
+.select_country_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.select_langages {
+    width: 25px;
+    height: 10px;
+    position: relative;
+    background-color: #182238;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px 2px #ffffff;
+}
+
+.label_check {
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    background: #00ff00;
+    /* background: linear-gradient(45deg, #00ff00 0%, #31a331 40%, #75ca75 100%); */
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px 2px #ffffff;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.country_check {
+    visibility: hidden;
+}
+
+.country_check:checked+.label_check {
+    left: 16px
+}
+
 .nav-link {
     font-size: 18px;
     font-weight: 400;
