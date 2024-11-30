@@ -3,7 +3,7 @@ const selectedLanguages = document.getElementById(slideOne)
 // Fonction pour charger les traductions via fetch
 async function fetchTranslations() {
     try {
-        const response = await fetch("/translation.json"); // Chemin vers le fichier JSON
+        const response = await fetch("/Portfolio_2024/translation.json"); // Chemin vers le fichier JSON
         // console.log(response);
 
         if (!response.ok) {
@@ -24,6 +24,7 @@ function updateLangages(lang, translations) {
         }
     })
 }
+// fonction permettant la mise à jour des placeholders
 function updatePlaceholders(lang, translations) {
     document.querySelectorAll('[data-lang-placeholder]').forEach((element) => {
         const placeholderKey = element.getAttribute("data-lang-placeholder");
