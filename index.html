@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./assets/js/traduction.js" defer></script>
     <script src="./assets/js/project.js" defer></script>
     <script src="./assets/js//regex.js" defer></script>
     <script src="./assets/js//copyright.js" defer></script>
@@ -71,10 +72,10 @@
                     </div>
                 </li>
                 <li class="nav_items">
-                    <a class="nav_link" href="#works">Works</a>
+                    <a class="nav_link" data-lang="works" href="#works">Works</a>
                 </li>
                 <li class="nav_items">
-                    <a id="contact" class="nav_link " href="#Contact">Start Project</a>
+                    <a id="contact" class="nav_link" data-lang="contact" href="#Contact">Start Project</a>
                 </li>
             </ul>
         </nav>
@@ -86,15 +87,15 @@
                 <h2 class="header_subtitles">
                     Frontend Developer
                 </h2>
-                <p class="header_description">
-                    <span class="description_title">
+                <p class="header_description" data-lang="header_description">
+                    <span data-lang="description_title" class="description_title">
                         Welcome to my Portfolio!
                     </span>
                     I am Laurent D'ALEO, a developer specializing in Frontend. Here, you'll find various projects I've
                     completed, as well as the skills I've acquired throughout my journey. Enjoy your visit and see you
                     soon.
                 </p>
-                <button class="header_btn">Learn More</button>
+                <button class="header_btn" data-lang="header_btn">Learn More</button>
             </div>
             <div class="illustration">
                 <div class="animated-bar"></div>
@@ -106,7 +107,7 @@
     </header>
     <section class="--section techno_content">
         <div>
-            <h2 class="techno_title">Technologies I use :</h2>
+            <h2 class="techno_title" data-lang="techno_title">Technologies I use :</h2>
         </div>
         <div class="techno_cards_container">
             <div class="techno_cards">
@@ -139,7 +140,7 @@
         <div class="works_title_content">
             <h2 class="works_title"></h2>
             <div class="project_title"></div>
-            <p class="works_description"></p>
+            <p class="works_description" data-lang="works_description"></p>
         </div>
         <div class="works_img_content">
             <img class="works_img" src="" alt="">
@@ -161,30 +162,26 @@
     </section>
     <section id="Contact" class=" --section contact_container">
         <div class="contact_txt_content">
-            <h2 class="contact_title">Contact Me</h2>
-            <p class="contact_subtitle">
-                Together, let's develop your product
+            <h2 class="contact_title" data-lang="contact_title">Contact Me</h2>
+            <p class="contact_subtitle" data-lang="contact_subtitle">
             </p>
             <div class="contact_skills_content">
                 <div class="skills_items">
                     <i class="fa-regular fa-circle-check" style="color: #00ff00;">
                     </i>
-                    <p class="contact_skill_txt">
-                        Ask a question
+                    <p class="contact_skill_txt" data-lang="contact_item1_txt">
                     </p>
                 </div>
                 <div class="skills_items">
                     <i class="fa-regular fa-circle-check" style="color: #00ff00;">
                     </i>
-                    <p class="contact_skill_txt">
-                        Propose a freelance mission
+                    <p class="contact_skill_txt" data-lang="contact_item2_txt">
                     </p>
                 </div>
                 <div class="skills_items">
                     <i class="fa-regular fa-circle-check" style="color: #00ff00;">
                     </i>
-                    <p class="contact_skill_txt">
-                        Make an appointment
+                    <p class="contact_skill_txt" data-lang="contact_item3_txt">
                     </p>
                 </div>
             </div>
@@ -193,29 +190,35 @@
             <form class="contact-form">
                 <div class="input_icons">
                     <i class="fa-solid fa-user fa-lg" style="color: #00ff00;"></i>
-                    <input class="contact_input" type="text" id="name" name="name" placeholder="Name">
+                    <input class="contact_input" type="text" id="name" name="name" placeholder=""
+                        data-lang-placeholder="input-name">
                 </div>
                 <div class="input_icons">
                     <i class="fa-regular fa-envelope fa-lg" style="color: #00ff00;"></i>
                     <input class="contact_input" type="email" id="email" name="email" placeholder="Email">
                 </div>
                 <div class="input_icons">
-                    <i class="fa-solid fa-mobile-screen-button fa-lg" style="color: #00ff00;">
-
-                    </i>
-                    <input class="contact_input" type="tel" id="phone" name="phone" placeholder="Phone">
+                    <i class="fa-solid fa-mobile-screen-button fa-lg" style="color: #00ff00;"></i>
+                    <input class="contact_input" type="tel" id="phone" name="phone" placeholder="Phone"
+                        data-lang-placeholder="input-phone">
                 </div>
                 <textarea class="contact_message" id="message" name="message" rows="5" placeholder="Message"></textarea>
                 <p id="error_message"></p>
-                <button class="contact_button" type="submit">Submit</button>
+                <button class="contact_button" type="submit" data-lang="contact-submit">Submit</button>
             </form>
         </div>
     </section>
     <footer class="section_footer">
         <div class="footer_container">
             <div class="copyright_content">
-                &copy; <span id="year"></span> Laurent D'ALEO. Tous droits réservés.
+                <div class="copyright_logo">
+                    &copy;
+                    <span id="year"></span>
+                </div>
+                <div class="copyright_txt" data-lang="copyright">
+                </div>
             </div>
+
         </div>
     </footer>
 </body>

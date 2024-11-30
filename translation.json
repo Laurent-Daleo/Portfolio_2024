@@ -1,0 +1,44 @@
+{
+    "en" : {
+        "works":"Works",
+        "contact":"Start Project",
+        "description_title":"Welcome to my Portfolio!",
+        "header_description":"I am Laurent D'ALEO, a developer specializing in Frontend. Here, you'll find various projects I've completed, as well as the skills I've acquired throughout my journey. Enjoy your visit and see you soon.",
+        "header_btn":"Learn More",
+        "techno_title":"Technologies I use :",
+        "works_description":"Poke City is a desktop website for a poke shop. It is not responsive. This project allowed me to familiarize myself with UX Design and the GSAP library.",
+        "contact_title":"Contact Me",
+        "contact_subtitle":"Together, let's develop your product",
+        "contact_item1_txt":"Ask a question",
+        "contact_item2_txt":"Propose a freelance mission",
+        "contact_item3_txt":"Make an appointment",
+        "input-name":"Name, Society",
+        "input-phone":"Phone-number",
+        "contact-submit":"Submit",
+        "copyright":"Laurent D'ALEO. All rights reserved"
+
+        
+
+
+    },
+    "fr" : {
+        "works":"Projets",
+        "contact":"demarrer un projet",
+        "description_title":"Bienvenue sur mon portfolio !",
+        "header_description":"Je suis Laurent D'ALEO, développeur spécialisé en Frontend. Vous trouverez ici différents projets que j'ai réalisés ainsi que les compétences que j'ai acquises tout au long de mon parcours. Bonne visite et à bientôt.",
+        "header_btn":"En savoir plus",
+        "techno_title":"Technologies que j'utilise :",
+        "works_description":"Poke City est un site Web Desktop pour un restaurent Poke. Il n'est pas rresponsive. Ce projet m'a permis de me familiariser avec l'UX Design et la bibliothèque GSAP.",
+        "contact_title":"Contactez-Moi",
+        "contact_subtitle":"Ensemble, développons votre produit",
+        "contact_item1_txt":"Poser une question",
+        "contact_item2_txt":"Proposition de mission freelance",
+        "contact_item3_txt":"Prendre un RDV",
+        "input-name":"Nom, Société",
+        "input-phone":"Téléphone",
+        "contact-submit":"Envoyer",
+        "copyright":"Laurent D'ALEO. Tous droits réservés"
+    }
+}
+ 
+
