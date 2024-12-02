@@ -7,6 +7,7 @@ const projectDescription = document.querySelector(".works_description");
 const projectImage = document.querySelector(".works_img");
 const prevButton = document.querySelector(".previous_work");
 const nextButton = document.querySelector(".next_work");
+const worksLink = document.querySelector(".works_link");
 
 // Fonction pour afficher le projet actuel
 function displayProject(index) {
@@ -14,6 +15,7 @@ function displayProject(index) {
     projectTitle.textContent = project.title;
     projectDescription.textContent = project.description;
     projectImage.src = project.imageUrl;
+    worksLink.href = project.url;
 }
 
 // Charger les données JSON
