@@ -329,7 +329,7 @@ body {
     border: 3px solid var(--secondary-color);
     border-radius: 50%;
     padding: 1% 2%;
-    transition: transform 1s ease;
+    transition: transform 1s ease-in-out;
 }
 
 .techno_cards:hover {

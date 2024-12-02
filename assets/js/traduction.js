@@ -1,5 +1,3 @@
-const selectedLanguages = document.getElementById(slideOne)
-
 // Fonction pour charger les traductions via fetch
 async function fetchTranslations() {
     try {
@@ -15,7 +13,7 @@ async function fetchTranslations() {
         return null;
     }
 }
-
+// fonction permettant la mise à jour des balises text
 function updateLangages(lang, translations) {
     document.querySelectorAll('[data-lang]').forEach((element) => {
         const dataKey = element.getAttribute("data-lang");

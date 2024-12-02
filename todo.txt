@@ -29,3 +29,27 @@ Informations :
 
 
 **/
+
+
+    <!--
+        Navigation : Logo (revenir à l'accueil) - Liens de menu - Changement de thème - Changement de langue - Call To Action => TOUJOURS VISIBLE à l'écran
+        => Header : ( Nom / prénom/ type de post / introduction courte sur ce que tu fais / btn en savoir plus) => l'idée c'est en 3s de savoir ce que tu fais 
+        => Expertises => Qu'est-ce que tu fais ? frontend, responsive, saas, avec icône + courte description  => montrer que tu est la bonne personne pour le job
+        => Réalisations => Le TOP de tes réalisations (3/5 max) + btn en voir plus => montre le top de ce que tu fais
+        => Témoignages => donne confiance en toi 
+        => formulaire de contact  =>  permet de prendre contact avec toi
+        Pied de page => récapitulatif de tous les liens / mentions légales / cookie / réseaux sociaux
+
+
+        Base du référencement 
+        1 page = 1 thème = min 400mots 
+
+
+        Roadmap : 
+        - Design portfolio
+        - Wordpress portfolio 
+        - Todolist en React
+        - Appli météo en react (utilisation API)
+        - Calculatrice en JavaScript Vanilla (avec tests unitaires)
+        
+    -->
