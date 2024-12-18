@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (isValid) {
-            messageError.innerHTML = "Form submitted successfully!";
+            messageError.innerHTML = "submitted successfully!";
         }
     });
 });

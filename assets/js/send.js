@@ -1,35 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Initialisation d'EmailJS avec la clé publique
-    emailjs.init("-wI9HDBR4cDsEMyHP");
+document.querySelector(".contact-form").addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêche le rechargement de la page
 
-    // Gestionnaire d'événement pour le formulaire
-    document.querySelector(".contact-form").addEventListener("submit", function (e) {
-        e.preventDefault(); // Empêche le rechargement de la page
+    // Création d'un objet FormData à partir du formulaire
+    const formData = new FormData(this);
+    formData.append('service_id', 'service_7t9ddh4'); // Remplacez par votre ID de service
+    formData.append('template_id', 'template_asm5dn9'); // Remplacez par votre ID de template
+    formData.append('user_id', '-wI9HDBR4cDsEMyHP'); // Remplacez par votre clé publique
 
-        // Récupération des données du formulaire
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const phone = document.getElementById("phone").value;
-        const message = document.getElementById("message").value;
-
-        // Création de l'objet de données
-        const formData = {
-            name: name,
-            email: email,
-            phone: phone,
-            message: message,
-        };
-
-        // Envoi via EmailJS
-        emailjs.send("service_7t9ddh4", "template_asm5dn9", formData)
-            .then(function (response) {
-                console.log("Message envoyé avec succès :", response);
-                alert("Votre message a bien été envoyé !");
-                document.querySelector(".contact-form").reset(); // Réinitialise le formulaire
-            })
-            .catch(function (error) {
-                console.error("Erreur lors de l'envoi :", error);
-                alert("Une erreur est survenue. Veuillez réessayer plus tard.");
-            });
-    });
+    // Envoi de la requête via fetch
+    fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => {
+            if (response.ok) {
+                alert('Your mail is sent!');
+            } else {
+                return response.json().then(err => {
+                    throw new Error(err.text || 'Something went wrong');
+                });
+            }
+        })
+        .catch(error => {
+            alert('Oops... ' + error.message);
+        });
 });
