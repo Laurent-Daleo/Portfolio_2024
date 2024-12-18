@@ -550,7 +550,8 @@ body {
 }
 
 .contact_input:focus {
-    color: var(--);
+    background-color: transparent;
+    color: var(--color-white);
     font-family: "source code pro", sans-serif;
     font-size: 1em;
     font-weight: 500;
