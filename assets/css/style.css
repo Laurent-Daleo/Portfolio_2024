@@ -549,9 +549,9 @@ body {
     font-weight: 500;
 }
 
-#name:focus,
-#email:focus,
-#phone:focus {
+input[type="name"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
     background-color: transparent;
     color: var(--color-white);
     font-family: "source code pro", sans-serif;
