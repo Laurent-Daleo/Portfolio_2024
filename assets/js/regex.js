@@ -1,3 +1,5 @@
+import { sendMail } from './send.js';
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".contact_button").addEventListener("click", function (event) {
         event.preventDefault();
@@ -40,10 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!textareaRegex.test(message)) {
             isValid = false;
             messageError.innerHTML += "Invalid message. Only alphabetic characters and spaces are allowed.";
+
         }
 
         if (isValid) {
-            messageError.innerHTML = "submitted successfully!";
+            console.log("formulaire valide");
+            sendMail()
         }
     });
 });

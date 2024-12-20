@@ -1,39 +1,25 @@
-document.querySelector(".contact-form").addEventListener('submit', function (event) {
-    event.preventDefault(); // Empêche la soumission classique
+export function sendMail() {
+    emailjs.init("-wI9HDBR4cDsEMyHP");
 
-    const form = event.target; // Référence au formulaire
-    const formData = new FormData(form);
+    const messageError = document.getElementById("error_message");
+    const templateParams = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        message: document.getElementById('message').value
+    };
 
-    // Ajoutez les clés EmailJS nécessaires directement dans les données du formulaire
-    formData.append('service_7t9ddh4');
-    formData.append('template_id', 'template_o39r6wo');
-    formData.append('user_id', '-wI9HDBR4cDsEMyHP');
-
-    const success = sendFormData(formData); // Appel à la fonction d'envoi
-    if (success) {
-        alert('Your message has been sent!');
-        form.reset(); // Réinitialise le formulaire en cas de succès
-    } else {
-        alert('Oops... Something went wrong. Please try again.');
-    }
-});
-
-// Fonction pour envoyer les données via EmailJS
-async function sendFormData(formData) {
-    try {
-        const response = await fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
-            method: 'POST',
-            body: formData,
-        });
-
-        if (!response.ok) {
-            const errorData = await response.json(); // Analyse de l'erreur renvoyée par l'API
-            throw new Error(errorData.text || 'Unknown error occurred');
-        }
-
-        return true; // Succès : la fonction retourne `true`
-    } catch (error) {
-        console.error('Error sending form data:', error.message); // Log d'erreur pour le développeur
-        return false; // Échec : la fonction retourne `false`
-    }
+    // Utiliser send() au lieu de sendForm()
+    emailjs.send("service_7t9ddh4", "template_o39r6wo", templateParams)
+        .then(
+            function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                messageError.innerText = "send successfully!";
+                document.getElementById('formsending').reset();
+            },
+            function (error) {
+                console.log('FAILED...', error);
+                messageError.innerText = "error sending!";
+            }
+        );
 }
