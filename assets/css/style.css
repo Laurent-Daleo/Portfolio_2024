@@ -480,9 +480,8 @@ body {
 
 .contact_title {
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 2px;
-    margin: 0% 0 1% 0;
     color: var(--secondary-color);
 }
 
@@ -497,7 +496,7 @@ body {
     align-items: start;
     justify-content: center;
     gap: 1.5em;
-    margin: 10% 0;
+    margin: 15% 0;
 }
 
 .skills_items {
