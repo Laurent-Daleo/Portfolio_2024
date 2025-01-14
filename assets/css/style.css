@@ -767,6 +767,14 @@ input[type="tel"]:focus {
 }
 
 @media(max-width:765px) {
+    .logo_title {
+        display: none;
+    }
+
+    .nav_items {
+        font-size: 0.8em;
+    }
+
     .header_titles {
         font-size: 1.5em;
     }
@@ -781,5 +789,18 @@ input[type="tel"]:focus {
 
     .header_description {
         font-size: 0.8em;
+    }
+}
+
+@media(max-width:660px) {
+    .illustration {
+        width: 250px;
+        height: 250px;
+        margin-left: 3%;
+    }
+
+    .illustration_img {
+        width: 250px;
+        height: 250px;
     }
 }
