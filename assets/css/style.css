@@ -835,11 +835,16 @@ input[type="tel"]:focus {
         margin-top: 170px;
     }
 
-    .contact_input,
-    #message {
-        width: 320px;
+    .contact_subtitle {
+        font-size: 2em;
     }
 }
+
+.contact_input,
+#message {
+    width: 320px;
+}
+
 
 @media(max-width:660px) {
     .illustration {
