@@ -863,6 +863,10 @@ input[type="tel"]:focus {
         display: none;
     }
 
+    .fa-bars {
+        font-size: 1.3em;
+    }
+
     .illustration {
         width: 250px;
         height: 250px;
